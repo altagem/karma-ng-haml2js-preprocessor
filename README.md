@@ -46,6 +46,10 @@ module.exports = function(config) {
         return cacheId;
       },
 
+      // Setting this option to true will run the haml command in a login shell.
+      // This will enable you to use the Ruby set by RVM instead of the system Ruby
+      loginShell: true,
+
       // setting this option will create only a single module that contains templates
       // from all the files, so you can load them all with module('foo')
       moduleName: 'foo'
